@@ -16,7 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,weak)UIScrollView *scro;
 
-- (void)normalSetting;
+@property (nonatomic,assign)CGFloat videoLength;//视频长度
+@property (nonatomic,assign)CGFloat audioLength;//音频长度
+
+- (void)setWithVideoSelectIn:(CGFloat)videoSelectIn videoSelectOut:(CGFloat)videoSelectOut audioSelectIn:(CGFloat)audioSelectIn audioSelectOunt:(CGFloat)audioSelectOut;
 
 @end
 

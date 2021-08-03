@@ -71,7 +71,9 @@
             __strong typeof(weakSelf)strongSelf = weakSelf;
             strongSelf.scrView.contentOffset = CGPointMake(contentOffset, strongSelf.scrView.contentOffset.y);
         };
-        [_contentView normalSetting];
+        _contentView.videoLength = 900.;
+        _contentView.audioLength = 1200.;
+        [_contentView setWithVideoSelectIn:100. videoSelectOut:900. audioSelectIn:300. audioSelectOunt:500.];
     }
     return _contentView;
 }
